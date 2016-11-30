@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register">
+
+    <TextView
+        android:text="欢迎注册"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/register_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#fff0f0"
+        android:hint="请输入用户名"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#fff0f0"
+        android:hint="请输入密码"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_below="@+id/register_user"
+        android:layout_alignLeft="@+id/register_user"
+        android:layout_alignStart="@+id/register_user"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:id="@+id/register_ok_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#fff0f0"
+        android:hint="请确认密码"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/register_password"
+        android:layout_alignLeft="@+id/register_password"
+        android:layout_alignStart="@+id/register_password" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:text="注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/register_ok_password"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="用户名和密码请不要使用中文和特殊字符"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
